@@ -59,7 +59,8 @@ namespace CreditCardInterestCalculator
         }
         #endregion Properties
 
-        CreditCard(string cardType, double balance)
+        #region Constructor
+        public CreditCard(string cardType, double balance)
         {
             if(CreditCardTypesWithInterestRate.ContainsKey(cardType))
             {
@@ -72,10 +73,13 @@ namespace CreditCardInterestCalculator
                 throw new Exception($"Provided card type {cardType} was not found in valid card types");
             }
         }
+        #endregion Constructor
 
+        #region Methods
         public void CalculateBalance()
         {
             _balance += (_balance * _interestRate);
         }
+        #endregion Methods
     }
 }
