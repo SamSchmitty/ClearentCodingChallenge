@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30204.135
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CreditCardInterestCalculator", "CreditCardInterestCalculator\CreditCardInterestCalculator.csproj", "{E534116D-A2A8-4746-9DA4-D8BC76F5E7A2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CreditCardInterestCalculator", "CreditCardInterestCalculator\CreditCardInterestCalculator.csproj", "{BE98EE35-E94D-4001-9D92-81420D9FD439}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{E534116D-A2A8-4746-9DA4-D8BC76F5E7A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E534116D-A2A8-4746-9DA4-D8BC76F5E7A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E534116D-A2A8-4746-9DA4-D8BC76F5E7A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E534116D-A2A8-4746-9DA4-D8BC76F5E7A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE98EE35-E94D-4001-9D92-81420D9FD439}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE98EE35-E94D-4001-9D92-81420D9FD439}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE98EE35-E94D-4001-9D92-81420D9FD439}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE98EE35-E94D-4001-9D92-81420D9FD439}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {DC95F778-5A3D-4876-98B1-45CDB3BC45C6}
+		SolutionGuid = {02101041-4A77-4A60-9CF5-8FE04DF906D9}
 	EndGlobalSection
 EndGlobal
