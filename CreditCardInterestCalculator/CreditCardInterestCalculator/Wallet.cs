@@ -30,17 +30,16 @@ namespace CreditCardInterestCalculator
             _creditCards.Add(new CreditCard(cardType, balance));
         }
 
-        public double CalculateBalance()
+        public double CalculateInterest()
         {
-            double balanceSum = 0;
+            double balanceInterest = 0;
             
             foreach(CreditCard card in _creditCards)
-            {
-                card.CalculateBalance();
-                balanceSum += card.Balance;
+            {                
+                balanceInterest += card.CalculateInterest();
             }
 
-            return balanceSum;
+            return balanceInterest;
         }
         #endregion Methods
     }

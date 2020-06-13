@@ -10,6 +10,7 @@ namespace CreditCardInterestCalculator
     {
         static void Main(string[] args)
         {
+            
         }
     }
 }

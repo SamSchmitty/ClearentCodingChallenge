@@ -76,9 +76,9 @@ namespace CreditCardInterestCalculator
         #endregion Constructor
 
         #region Methods
-        public void CalculateBalance()
+        public double CalculateInterest()
         {
-            _balance += (_balance * _interestRate);
+            return (_balance * _interestRate);
         }
         #endregion Methods
     }
