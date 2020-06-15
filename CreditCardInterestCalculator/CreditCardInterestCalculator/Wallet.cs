@@ -32,14 +32,17 @@ namespace CreditCardInterestCalculator
 
         public double CalculateInterest()
         {
-            double balanceInterest = 0;
+            double walletInterest = 0.0;
+            double cardInterest = 0.0;
             
-            foreach(CreditCard card in _creditCards)
-            {                
-                balanceInterest += card.CalculateInterest();
+            foreach (CreditCard card in _creditCards)
+            {
+                cardInterest = card.CalculateInterest();
+                Console.WriteLine($"Interest for card type {card.CardType} is {cardInterest:C}");
+                walletInterest += cardInterest;
             }
 
-            return balanceInterest;
+            return walletInterest;
         }
         #endregion Methods
     }
