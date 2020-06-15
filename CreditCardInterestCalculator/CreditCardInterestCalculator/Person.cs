@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CreditCardInterestCalculator
 {
-    class Person
+    public class Person
     {
         #region Fields
         private List<Wallet> _wallets;
@@ -51,7 +51,7 @@ namespace CreditCardInterestCalculator
             Wallets.Add(newWallet);
         }
 
-        public void CalculateInterest()
+        public double CalculateInterest()
         {
             Console.WriteLine($"Interest calculation for {Name}");
 
@@ -68,7 +68,7 @@ namespace CreditCardInterestCalculator
                 sumInterest += interestPerWallet;
             }
 
-            Console.WriteLine($"Total interest for {Name} is {sumInterest:C}");
+            return sumInterest;
         }
         #endregion Methods
     }

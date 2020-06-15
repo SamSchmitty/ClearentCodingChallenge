@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CreditCardInterestCalculator
 {
-    class Wallet
+    public class Wallet
     {
         #region Fields
         List<CreditCard> _creditCards;

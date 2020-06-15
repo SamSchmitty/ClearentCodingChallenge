@@ -7,34 +7,34 @@ using System.Threading.Tasks;
 
 namespace CreditCardInterestCalculator
 {
-    class CreditCard
+    public class CreditCard
     {
         #region Fields
         //Dictionary<Credit Type, interest rate>
-        private Dictionary<string, float> _creditCardTypesWithInterestRate;
+        private Dictionary<string, double> _creditCardTypesWithInterestRate;
         private double _balance;
-        private float _interestRate;
+        private double _interestRate;
         private string _cardType;
         #endregion Fields
 
         #region Properties
-        public Dictionary<string, float> CreditCardTypesWithInterestRate
+        public Dictionary<string, double> CreditCardTypesWithInterestRate
         {
             get 
             {
                 if(_creditCardTypesWithInterestRate == null)
                 {
-                    _creditCardTypesWithInterestRate = new Dictionary<string, float>();
-                    _creditCardTypesWithInterestRate.Add("Visa", .1f);
-                    _creditCardTypesWithInterestRate.Add("MC", .05f);
-                    _creditCardTypesWithInterestRate.Add("Discover", .01f);
+                    _creditCardTypesWithInterestRate = new Dictionary<string, double>();
+                    _creditCardTypesWithInterestRate.Add("Visa", .1);
+                    _creditCardTypesWithInterestRate.Add("MC", .05);
+                    _creditCardTypesWithInterestRate.Add("Discover", .01);
                 }
 
                 return _creditCardTypesWithInterestRate;
             }
         }
 
-        public float InterestRate
+        public double InterestRate
         {
             get 
             {

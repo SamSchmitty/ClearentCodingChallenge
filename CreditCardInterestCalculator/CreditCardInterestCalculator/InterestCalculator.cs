@@ -25,7 +25,8 @@ namespace CreditCardInterestCalculator
 
             Person bob = new Person(walletsCase1, "bob");
 
-            bob.CalculateInterest();
+            double bobInterest = bob.CalculateInterest();
+            Console.WriteLine($"Total interest for bob is {bobInterest:C}");
 
             /* 1 person has 2 wallets Wallet 1 has a Visa and Discover, wallet 2 a MC - each card has $100 balance -
                 calculate the total interest(simple interest) for this person and interest per wallet
@@ -44,7 +45,8 @@ namespace CreditCardInterestCalculator
 
             Person sally = new Person(walletsCase2, "Sally");
 
-            sally.CalculateInterest();
+            double sallyInterest = sally.CalculateInterest();
+            Console.WriteLine($"Total interest for Sally is {sallyInterest:C}");
 
             /* 2 people have 1 wallet each, person 1 has 1 wallet, with 2 cards MC and visa person 2
                 has 1 wallet – 1 visa and 1 MC - each card has $100 balance - calculate the total
@@ -70,8 +72,11 @@ namespace CreditCardInterestCalculator
 
             Person jill = new Person(walletsCase3Person2, "Jill");
 
-            jack.CalculateInterest();
-            jill.CalculateInterest();
+            double jackInterest = jack.CalculateInterest();
+            double jillInterest = jill.CalculateInterest();
+
+            Console.WriteLine($"Total interest for Jack is {jackInterest:C}");
+            Console.WriteLine($"Total interest for Jill is {jillInterest:C}");
 
             //this is just here so that the console doens't close immediately and you can read the output. 
             string response;
